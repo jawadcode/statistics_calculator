@@ -93,7 +93,8 @@ button {
   vertical-align: middle;
 }
 
-.values_table_head th, .values_table_footer td {
+.values_table_head th,
+.values_table_footer td {
   padding: 0.75rem;
 }
 
