@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Standard Deviation calculator</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="stats">
+        <h4 class="stat">Numbers: <span class="numbers_value">0</span></h4>
+        <h4 class="stat">Mean: <span class="mean_value">0</span></h4>
+        <h4 class="stat">Variance: <span class="variance_value">0</span></h4>
+        <h4 class="stat">
+          Standard Deviation: <span class="sd_value">0</span>
+        </h4>
+      </div>
+      <form action="javascript:void(0);" class="form">
+        <input type="text" name="form_value" class="form_input" />
+        <button type="submit" class="form_submit">Add</button>
+      </form>
+      <div class="table-wrapper">
+        <table class="values_table">
+          <thead class="values_table_head">
+            <tr>
+              <th>#</th>
+              <th>x</th>
+              <th>x²</th>
+            </tr>
+          </thead>
+          <tbody class="values_table_body"></tbody>
+          <tfoot class="values_table_footer">
+            <tr>
+              <td>&Sigma;</td>
+              <td class="sum_x">0</td>
+              <td class="sum_means">0</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
